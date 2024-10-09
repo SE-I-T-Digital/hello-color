@@ -1,0 +1,9 @@
+version: '2.4'
+
+services:
+  hello-world:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      BACKGROUND_COLOR: ${BACKGROUND_COLOR:-lightblue}  # Default color
