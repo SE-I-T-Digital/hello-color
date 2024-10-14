@@ -16,11 +16,14 @@
     </style>
 </head>
 <body>
-    Hello World
-    <script>
-        // Get the background color from the environment variable
-        const bgColor = '{{BACKGROUND_COLOR}}';
-        document.body.style.backgroundColor = bgColor;
-    </script>
+    <div class="header">
+        <h1>Hello World !!!</h1>
+        <img src="./{{DISPLAY_IMAGE}}" alt="Icon" />
+        <script>
+            // Get the background color from the environment variable
+            const bgColor = '{{BACKGROUND_COLOR}}';
+            document.body.style.backgroundColor = bgColor;
+        </script>
+    </div>
 </body>
 </html>
