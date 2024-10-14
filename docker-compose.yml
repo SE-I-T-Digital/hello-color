@@ -7,3 +7,4 @@ services:
       - "8080:80"
     environment:
       BACKGROUND_COLOR: ${BACKGROUND_COLOR:-lightblue}  # Default color
+      DISPLAY_IMAGE: ${DISPLAY_IMAGE:-hello-world.png}  # Default image
