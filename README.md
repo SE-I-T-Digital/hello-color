@@ -1,7 +1,6 @@
-- Build and Run with Docker Compose:
-DISPLAY_IMAGE=hello-world-2.png BACKGROUND_COLOR=lightgreen docker-compose up --build -d
-DISPLAY_IMAGE=hello-world.png BACKGROUND_COLOR=lightblue docker-compose up --build -d
+Build demo application: hello world with background color and display image.
 
+- Build docker file: docker build -t <YOUR_DOCKER_USERNAME>/concepts-build-image-demo:tag .
+- Push the image: docker push <YOUR_DOCKER_USERNAME>/concepts-build-image-demo:tag
 
-- Access the Application
-http://localhost:8080
+After creating the image and pushing it to the container registry, Look at hello-world-color (https://github.com/SE-I-T-Digital/hello-world-color/tree/main) to deploy it.
