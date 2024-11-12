@@ -11,6 +11,9 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY hello-world.png /usr/share/nginx/html/hello-world.png
 COPY hello-world-2.png /usr/share/nginx/html/hello-world-2.png
 
+# Copy images from app-data
+COPY /app-data/*.png /usr/share/nginx/html/
+
 # Make the script executable
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
